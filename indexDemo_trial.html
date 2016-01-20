@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Unicast Broadcast</title>
+<link rel="stylesheet" href="css/typography.css" />
+<link rel="stylesheet" href="css/applicationBar.css" />
+<link rel="stylesheet" href="css/windows.css" />
+<link rel="stylesheet" href="css/menuTree.css" />
+<link rel="stylesheet" href="css/breadcrumbs.css" />
+<link rel="stylesheet" href="css/assets.css" />
+<link rel="stylesheet" href="css/input.css" />
+<link rel="stylesheet" href="css/buttons.css" />
+<link rel="stylesheet" href="css/example.css" />
+<!-- <link rel="stylesheet" href="css/specs.css" /> -->
+<link rel="stylesheet" href="css/specsLWL.css"/>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/dygraph-combined.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<header class="e-applicationBar">
+<label class="e-app"></label>
+<ul class="e-menu">
+		<li><a id="running" class="stopp">S</a></li>
+		<li><a id="delete">D</a></li>
+		<li><a id="advanced">+</a></li>
+	</ul>
+</header>
+<div class="main e-groupedWindows">
+<div class="graphArea">
+<div class="additional"><h3>GROUP 1</h3></div>
+	<div class="e-window graphL">
+		<div class="e-window">
+			<h4>VIDEO STATUS</h4>
+			<div><div id="div_g1" class="graphInno"></div></div>
+			<br>
+			<div><div id="div_g2" class="graphInno"></div></div>
+			<br>
+			<div><div id="div_g3" class="graphInno"></div></div>
+			<h5>x:Time | 0: not playing  1: playing</h5>
+		</div>
+		
+		<br/>
+		<br/>
+	</div>
+	<div id="moreGraphs" class="e-window graphR">
+		<div class="e-window">
+			<h4>LINK BIT RATE</h4>
+			<div><div id="div_g11" class="graphInno gRight"></div></div>
+			<br>
+			<div><div id="div_g12" class="graphInno gRight"></div></div>
+			<br>
+			<div><div id="div_g13" class="graphInno gRight"></div></div>
+			<h5>x:Time | y:Mbps</h5>
+		</div>
+		<br/>
+		<br/>
+	</div>
+	<div class="e-window co">
+		<h4>CELL OCCUPANCY</h4>
+		<div id="div_g17" class="graphInno gRight sum"></div>
+	</div>
+</div>
+<div class="infoArea">
+	<div class="additional">
+	<h3>GROUP 2</h3></div>
+	<div class="e-window graphL additional">
+		<div class="e-window graphAdditionalL">
+			<h4>VIDEO STATUS</h4>
+			<div><div id="div_g4" class="graphInno"></div></div>
+			<br>
+			<div><div id="div_g5" class="graphInno"></div></div>
+			<br>
+			<div><div id="div_g6" class="graphInno"></div></div>
+			<h5>x:Time | 0: not playing  1: playing</h5>
+		</div>
+		<br/>
+		<br/>
+	</div>
+	<div id="moreGraphs2" class="e-window graphR additional">
+		<div class="e-window">
+			<h4>LINK BIT RATE</h4>
+			<div><div id="div_g14" class="graphInno gRight"></div></div>
+			<br>
+			<div><div id="div_g15" class="graphInno gRight"></div></div>
+			<br>
+			<div><div id="div_g16" class="graphInno gRight"></div></div>
+			<h5>x:Time | y:Mbps</h5>
+		</div>
+		<br/>
+		<br/>
+	</div>
+	<div class="e-window co">
+		<h4>GLM MAP</h4>
+		<!-- div class="e-window glmDiv"><iframe id="div_g18" class="graphInno gRight glm glmDiv" src="http://aachen1:safgr45J@87.79.1.103/video/"></iframe></div>-->
+	</div>
+</div>
+</div>
+<footer></footer>
+</body>
+</html>
